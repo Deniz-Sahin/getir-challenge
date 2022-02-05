@@ -8,7 +8,7 @@ mongoose
   .connect("mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true", { useNewUrlParser: true })
   .then(() => {
     
-    app.listen(80, () => {
+    app.listen(3000, () => {
       console.log("Server has started!");
     });
   });
