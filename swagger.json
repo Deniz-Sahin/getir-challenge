@@ -1,0 +1,25 @@
+{
+    "swagger" : "2.0",
+    "host": "http://localhost:5000",
+    "basePath": "/api",
+    "info":{  
+		"version":"1.0.0",
+		"title":"Deniz Şahin Getir Challenge"
+    },
+    "paths": {
+        "/records":{
+            "post":{
+                "description": "List records",
+                "consumes": ["application/json"],
+                "produces":["application/json"],
+
+                "parameters":[{
+                    "in":"body",
+                    "name": "body",
+                    "description": "inputs",
+                    "required": true
+                }]
+            }
+        }
+    }
+}
