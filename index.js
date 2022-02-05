@@ -8,7 +8,9 @@ mongoose
   .connect("mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true", { useNewUrlParser: true })
   .then(() => {
     
-    app.listen(3000, () => {
+    const port = process.env.PORT || 3000;
+
+    app.listen(port, () => {
       console.log("Server has started!");
     });
   });
